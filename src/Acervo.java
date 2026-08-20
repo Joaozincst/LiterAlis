@@ -16,5 +16,13 @@ public class Acervo  {
             System.out.println("--------------------------------------------");
         }
     }
+    public Leitura pesquisaPorTitulo(String titulo){
+        for(Leitura item: this.listaDeLeitura){
+            if(item.getTitulo().equalsIgnoreCase(titulo)){
+                return item;
+            }
+        }
+        return null;
+    }
 
 }
